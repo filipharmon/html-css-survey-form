@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Short survey on anime waifus</h1>
+    <p id="description">Please fill in some information in order to find out if you are a weeb.</p>
+    <form id="survey-form">
+        <div class="form_group"> 
+            <label for="name" id="name-label">Name</label> 
+            <input type="text" name="name" id="name" class="form_control" placeholder="enter your name" required>
+        </div>
+        <div class="form_group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="form_control" placeholder="enter your email" required>
+        </div>
+        <div class="form_group">
+            <label for="age" id="number-label">Age</label>
+            <input type="number" min="1" max="99" name="age" id="number" class="form_control" placeholder="Age>18&loli hentai = FBI" required>
+        </div>
+        <div class="form_group">
+            <p id="dropdown_label">What kind of weeb do you consider yourself to be?<span> (Options are ordered from mild to disastruous)</span></p>
+            <select name="role" id="dropdown" class="form-control" required>
+                <option disabled selected>Select current state</option>
+                <option value="Weeblet">Weeblet</option>
+                <option value="Weeabo">Weeabo</option>
+                <option value="Weeb">Weeb</option>
+                <option value="Weebus maximus">Weebus maximus</option>
+                <option value="Andy">Andy</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p id="recommend_p">Are you likely to recommend Genshin Impact or Zelda: Breath of the Waifus to a friend?</p>
+            <label for="definetly">
+                <input type="radio" name="user-recommend" value="definetly" class="input-radio" checked>Definetly
+            </label>
+            <label for="maybe">
+                <input type="radio" name="user-recommend" value="maybe" class="input-radio">Maybe
+            </label>
+            <label for="definetly">
+                <input type="radio" name="user-recommend" value="no way" class="input-radio">No way
+            </label>
+        </div>
+        <div class="form_group">
+            <p id="most_like">What do you like most in an anime waifu?</p>
+            <select name="preference" id="most-like" class="form-control" required>
+                <option disabled selected>Option will affect people's opinion about you</option>
+                <option value="Booba">Booba</option>
+                <option value="Ass">Ass</option>
+                <option value="Legs">Legs</option>
+                <option value="Face">Face</option>
+                <option value="Personality">Personality</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p id="harem_waifu">If you were to make a harem, please select the waifus you would marry.<span> Check all that apply.</span></p>
+            <label>
+                <input type="checkbox" name="harem" value="Yae Miko" class="input-checkbox">Yae Miko
+            </label>
+            <label>
+                <input type="checkbox" name="harem" value="Booba Shogun" class="input-checkbox">Booba Shogun
+            </label>
+            <label>
+                <input type="checkbox" name="harem" value="Ayaka" class="input-checkbox">Ayaka
+            </label>
+            <label>
+                <input type="checkbox" name="harem" value="Fish" class="input-checkbox">Fish
+                </label>
+            <label>
+                <input type="checkbox" name="harem" value="Ganyu" class="input-checkbox">Ganyu
+            </label>
+            <label>
+                <input type="checkbox" name="harem" value="Keqing" class="input-checkbox">Keqing
+             </label>
+        </div>
+        <div class="form-group">
+        <p id="comments">Any other comments, fellow weebs?</p>
+        <textarea name="comment" id="comments_table" placeholder="enter your speech here"></textarea>
+        </div>
+        <div class="submit">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
